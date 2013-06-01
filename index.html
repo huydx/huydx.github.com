@@ -34,20 +34,20 @@
         <h3><a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Some fun stuffs</h3>
         <h4>→→→ snake game in javascript (use arrow to move)</h4>
         <iframe src="./stuffs/snakejs/index.html" width="360px" height="370px"></iframe>
-        <br/><br/>
+        <br/><br/><br/><br/>
         <hr/>
         <h4>→→→ prove of concept: physical engine with html5 (use arrow to move)</h4>
         <iframe src="./stuffs/box2dhtml5/game.html" width="700px" height="530px"></iframe>
-        <br/><br/>
+        <br/><br/><br/><br/>
         <hr/>
         <h4>→→→ jquery plugin for niconico like effect for images</h4>
         As shown in my profile picture at the left  ( feel free to explore source code <a href="https://github.com/huydx/jqueryplugins/tree/master/overlay">here</a> )
-        <br/><br/>
+        <br/><br/><br/><br/>
         <hr/>
         <h4>→→→ python script to crawl pdf file </h4>
         <img src="images/pdfcrawler.png"/>
         Source code and usage is avaiable <a href="https://github.com/huydx/pdfcrawler">here</a>
-        <br/><br/>
+        <br/><br/><br/><br/>
         <hr/>
         <h4>→→→ Stream slide: service to share your slide in realtime, chat with audiences and ask question easily (this service is built with the help from <a href="https://github.com/kiennt">@kiennt</a> and <a href="https://github.com/nghialv2607">@nghialv</a></h4>
         <a href="http://streamslide-staging.herokuapp.com/"><img src="images/streamslide.png"/></a>
@@ -57,4 +57,28 @@
         <hr/>
         <h4>→→→ voice beat visualizer </h4>
         click <a href="stuffs/webaudioapi/index.html">here</a> to see (IMPORTANT!!!!!! please wait until 20s, to see the effect, the more faster the beat is, more circle will be emit
+        <br/><br/><br/><br/>
+        <hr/>
+        <h4>→→→ self made irc bot </h4>
+        You can checkout source code here <a href="https://github.com/huydx/irclog-web/tree/master/rubybot">here</a>. my bot is able to save url with tags / add tasks to some one and remind them at defined time. To install, just clone myscript, add config.yml file to the same folder with the below format:
+        <pre><code>
+          dbname: 'your_sqlite3_dbfile.db'
+          dblocation: 'location of your db file'
+          ircserver: 'irc server name'
+          ircchannel: '#irc channel name' 
+        </code></pre> 
+
+Simple usage is list as below:
+        <pre><code>
+          -To add new url with tags   : bm add [url] [#tag1] [#tag2]
+          -To delete an url           : bm delete [url]
+          -To show url with tags      : bm show [#tag1] [#tag2]
+          -To show all tags of system : bm tags 
+
+          -To add new task:  task add [[task-descriotion]] [user] (YYYY/MM/DD HHh)
+          -To show task of a user:  task show [username] 
+          -To delete a task: task delete [taskid]
+        </code></pre> 
+
+
 </html>

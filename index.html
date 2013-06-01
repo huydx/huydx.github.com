@@ -37,11 +37,18 @@
         <br/><br/><br/><br/>
         <hr/>
         <h4>→→→ prove of concept: physical engine with html5 (use arrow to move)</h4>
+        <p>This below example is designed with render part and physical calculate part seprately. We use box2djs as physical engine.</p>
         <iframe src="./stuffs/box2dhtml5/game.html" width="700px" height="530px"></iframe>
         <br/><br/><br/><br/>
         <hr/>
         <h4>→→→ jquery plugin for niconico like effect for images</h4>
-        As shown in my profile picture at the left  ( feel free to explore source code <a href="https://github.com/huydx/jqueryplugins/tree/master/overlay">here</a> )
+        As shown in my profile picture at the left  ( feel free to explore source code <a href="https://github.com/huydx/jqueryplugins/tree/master/overlay">here</a> ). This code is implemented as jquery plugin, to add overlay into an image, you can simply use this below code
+        <pre><code>
+        $(imageobject).Overlay([list of text object])
+        //for example
+        $(this).Overlay([{"content":"doxuanhuy@gmail.com", "like":2}, {"content":"Ritsumeikan University", "like": 1}])
+        //like is to determine size of text, the more like, the bigger
+        </code></pre> 
         <br/><br/><br/><br/>
         <hr/>
         <h4>→→→ python script to crawl pdf file </h4>

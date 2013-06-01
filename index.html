@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Huydx.github.com by huydx</title>
-
+    <script type='text/javascript' src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type='text/javascript' src="javascripts/overlay.js"></script>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -17,21 +18,32 @@
       <header>
         <h1>Huydx.github.com</h1>
         <p></p>
-        <p class="view"><a href="https://github.com/huydx">View My GitHub Profile</a></p>
-        <img src="images/profile_pic.jpg" />
+        <p class="view">Github: <a href="https://github.com/huydx">@github</a></p>
+        <p class="view">Twitter: <a href="https://twitter.com/dxhuy">@twitter</a></p>
+        <p class="view">Facebook: <a href="https://twitter.com/dxhuy">@facebook</a></p>
+        <img id="1" src="images/profile_pic.jpg" onClick='$(this).Overlay([{"content":"doxuanhuy@gmail.com", "like":2}, {"content":"Ritsumeikan University", "like": 1}])'/>
       </header>
       <section>
         <h3>
           <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to huydx personal pages.</h3>
-          <p>I'm currently master student learning/researching about datamining at Ritsumeikan university. You can reach me by drop an email at <a href="mailto:doxuanhuy@gmail.com">doxuanhuy (atmark) gmail.com</a></p>
+          <p>I'm currently master student learning/researching about datamining at Ritsumeikan university</p>
           <p>I'm also an part-time web developer (mainly using Ruby) at <a href="http://framgia.com/jp/">Framgia Inc</a> and <a href="http://share-wis.com/">Sharewis Inc</a></p>
-        <h3>
-          <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Another stuffs</h3>
           <p>I'm interested in building thing, especially in javascript and ruby, please checkout my github profile at left bar</p>
           <p>I'm also writing a technical blog at <a href="http://ktmt.github.io">here</a> with some of my friends</p>
-        <h3>
-        <h3>
-          <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Complete CV</h3>
-          <p>You can check my complete cv at <a href="cv/huydxcv.pdf">here</a> (currently, my complete resume is only avaiable in japanese) </p>
-        <h3>
+        <h3><a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Some fun stuffs</h3>
+        <h4>→→→ snake game in javascript (use arrow to move)</h4>
+        <iframe src="./stuffs/snakejs/index.html" width="360px" height="370px"></iframe>
+        <br/><br/>
+        <hr/>
+        <h4>→→→ jquery plugin for niconico like effect for images</h4>
+        Click to my profile picture at the left to explore ( Source code available <a href="https://github.com/huydx/jqueryplugins/tree/master/overlay">here</a> )
+        <br/><br/>
+        <hr/>
+        <h4>→→→ python script to crawl pdf file </h4>
+        <img src="images/pdfcrawler.png"/>
+        Source code and usage is avaiable <a href="https://github.com/huydx/pdfcrawler">here</a>
+        <br/><br/>
+        <hr/>
+        <h4>→→→ Stream slide: service to share your slide in realtime, chat with audiences and ask question easily </h4>
+        <a href="http://streamslide-staging.herokuapp.com/"><img src="images/streamslide.png"/></a>
 </html>
